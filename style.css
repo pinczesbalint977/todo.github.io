@@ -9,6 +9,7 @@ body{
     margin: 0;
     padding: 0;
     background: rgb(42, 42, 42);
+    overflow-x: hidden;
 
 }
 
@@ -153,7 +154,7 @@ input[type=checkbox]::before {
     position: absolute;
     content: '\2713';
     font-size: 30px;
-    line-height: 15px;
+    line-height: 10px;
     color: #fff;
     transform: scale(0);
     transition: 0.3s all ease-in-out;
