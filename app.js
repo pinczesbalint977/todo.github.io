@@ -2,6 +2,7 @@ const btn = document.getElementById("btn");
 const input = document.getElementById("input");
 const result = document.getElementById("result");
 const btndelet = document.getElementById("delete");
+const h2 = document.getElementById("h2text");
 
 btn.addEventListener("click", addtodo);
 input.addEventListener("keyup", function(event) {
@@ -10,7 +11,10 @@ input.addEventListener("keyup", function(event) {
   }
 });
 
+
+
 document.addEventListener("DOMContentLoaded", function() {
+
   var savedTodos = localStorage.getItem("todos");
 
   if (savedTodos) {

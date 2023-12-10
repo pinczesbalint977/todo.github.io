@@ -12,6 +12,7 @@ body{
 
 }
 
+
 .active{
 
     text-decoration: line-through;
@@ -125,6 +126,58 @@ button:hover{
     transition: 0.2s;
 
 }
+
+
+
+
+
+input[type=checkbox] {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    transition: 0.3s all ease-in-out;
+    cursor: pointer;
+}
+
+input[type=checkbox]:checked {
+    background-color: #6fb92a;
+    border: 1px solid azure;
+}
+
+input[type=checkbox]::before {
+    position: absolute;
+    content: '\2713';
+    font-size: 30px;
+    line-height: 15px;
+    color: #fff;
+    transform: scale(0);
+    transition: 0.3s all ease-in-out;
+}
+
+input[type=checkbox]:checked::before {
+    transform: scale(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 600px){
     
