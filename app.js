@@ -52,7 +52,7 @@ function createTodoElement(text, active, checked) {
 
   p.appendChild(checkbox);
   p.addEventListener("click", handleTodoClick);
-  p.addEventListener("dblclick", deleteTodo);
+
 
   if (active) {
     p.classList.add("active");
